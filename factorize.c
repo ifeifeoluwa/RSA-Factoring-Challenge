@@ -6,11 +6,11 @@
  *
  * Return: int
  */
-int factorize(char *buffer)
+unsigned long int factorize(char *buffer)
 {
 
-	u_int32_t num;
-	u_int32_t i;
+	unsigned long int num;
+	unsigned long int i;
 
 	num = atoi(buffer);
 
@@ -19,7 +19,7 @@ int factorize(char *buffer)
 	{
 		if (num % i == 0)
 		{
-			printf("%d=%d*%d\n",num,num/i,i);
+			printf("%lu=%lu*%lu\n",num,num/i,i);
 			break;
 		}
 	}
